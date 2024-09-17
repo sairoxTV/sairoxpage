@@ -1,25 +1,17 @@
 /* Ogólne ustawienia */
-html, body {
-    height: 100%; /* Ustawienie pełnej wysokości strony */
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000000, #ff0000); /* Gradient od czarnego do czerwonego */
-    background-size: cover; /* Zapewnia, że gradient obejmuje całą stronę */
+    background-color: #000;
     color: #fff;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Minimalna wysokość */
 }
 
 /* Nagłówek */
 header {
     text-align: center;
     padding: 20px;
-    background: transparent; /* Usuń tło, ponieważ gradient obejmuje całą stronę */
+    background: linear-gradient(to bottom, #000, #ff0000); /* Gradient z czarnego do czerwonego */
     box-shadow: 0 4px 6px rgba(255, 0, 0, 0.6);
 }
 
@@ -69,13 +61,14 @@ li {
 footer {
     text-align: center;
     padding: 20px;
-    background: transparent; /* Usuń tło z stopki */
+    background: linear-gradient(to top, #000, #ff0000); /* Gradient z czerwonego do czarnego */
     box-shadow: 0 -4px 6px rgba(255, 0, 0, 0.6);
 }
 
 footer p {
     color: #ccc;
 }
+/* Stylizacja przycisków nawigacji */
 
 /* Stylizacja przycisków nawigacji */
 nav {
@@ -83,20 +76,23 @@ nav {
 }
 
 .nav-button {
-    display: inline-block;
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+    display: inline-block; /* Zamienia link w element blokowy, dzięki czemu można dodać padding */
+    background-color: #007BFF; /* Niebieski kolor */
+    color: white; /* Biały tekst */
+    padding: 10px 20px; /* Wewnętrzne odstępy, które nadają wygląd przycisku */
+    text-decoration: none; /* Usuwa podkreślenie tekstu */
     font-size: 1rem;
-    margin: 0 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 10px; /* Odstęp między przyciskami */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4); /* Cień pod przyciskiem */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Płynna zmiana koloru i efekt unoszenia */
 }
 
 .nav-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+    background-color: #0056b3; /* Ciemniejszy niebieski po najechaniu */
+    transform: translateY(-2px); /* Efekt unoszenia przycisku */
 }
 
+nav a:first-child {
+    margin-left: 0;
+}
