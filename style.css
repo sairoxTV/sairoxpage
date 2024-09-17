@@ -1,18 +1,22 @@
 /* Ogólne ustawienia */
 html, body {
-    height: 100%; /* Ustawienie pełnej wysokości strony */
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000000, #ff0000); /* Gradient od czarnego do czerwonego */
-    background-size: cover; /* Zapewnia, że gradient obejmuje całą stronę */
+    background: linear-gradient(to bottom, #000000, #ff0000); /* Gradient na całą stronę */
+    background-size: cover;
+    min-height: 100vh;
     color: #fff;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Minimalna wysokość */
+}
+
+/* Inne style */
+
 }
 
 /* Nagłówek */
