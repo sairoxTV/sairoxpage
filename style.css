@@ -68,31 +68,3 @@ footer {
 footer p {
     color: #ccc;
 }
-/* Stylizacja przycisków nawigacji */
-
-/* Stylizacja przycisków nawigacji */
-nav {
-    margin-top: 20px;
-}
-
-.nav-button {
-    display: inline-block; /* Zamienia link w element blokowy, dzięki czemu można dodać padding */
-    background-color: #007BFF; /* Niebieski kolor */
-    color: white; /* Biały tekst */
-    padding: 10px 20px; /* Wewnętrzne odstępy, które nadają wygląd przycisku */
-    text-decoration: none; /* Usuwa podkreślenie tekstu */
-    font-size: 1rem;
-    margin: 0 10px; /* Odstęp między przyciskami */
-    border-radius: 5px; /* Zaokrąglone rogi */
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4); /* Cień pod przyciskiem */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Płynna zmiana koloru i efekt unoszenia */
-}
-
-.nav-button:hover {
-    background-color: #0056b3; /* Ciemniejszy niebieski po najechaniu */
-    transform: translateY(-2px); /* Efekt unoszenia przycisku */
-}
-
-nav a:first-child {
-    margin-left: 0;
-}
