@@ -77,4 +77,30 @@ footer {
 footer p {
     color: #ccc;
 }
+/* Stylizacja przycisków nawigacji */
+nav {
+    margin-top: 20px;
+}
+
+.nav-button {
+    background-color: #007BFF; /* Niebieski kolor */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #0056b3; /* Ciemniejszy niebieski po najechaniu */
+    transform: translateY(-2px); /* Efekt unoszenia przycisku */
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
 
