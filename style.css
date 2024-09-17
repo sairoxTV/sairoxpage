@@ -12,11 +12,24 @@ body {
     animation: gradientAnimation 10s ease infinite;
 }
 
+/* Animacja gradientu */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 /* Nagłówek */
 header {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to bottom, #000, #ff0000); /* Gradient z czarnego do czerwonego */
+    background: linear-gradient(to bottom, #000, #ff0000);
     box-shadow: 0 4px 6px rgba(255, 0, 0, 0.6);
     width: 100%;
     box-sizing: border-box;
@@ -27,15 +40,33 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh; /* Wysokość nawigacji równa wysokości widoku */
-    width: 200px; /* Szerokość paska bocznego */
-    background-color: #000; /* Kolor tła paska bocznego */
+    height: 100vh;
+    width: 200px;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 4px 0 6px rgba(255, 0, 0, 0.6);
     padding: 20px 0;
+    transition: transform 0.3s ease; /* Animacja dla chowania */
+}
+
+nav.hidden {
+    transform: translateX(-100%); /* Chowanie paska bocznego */
+}
+
+#toggle-button {
+    position: absolute;
+    top: 10px;
+    right: -40px; /* Pozycja przycisku poza paskiem bocznym */
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.6);
 }
 
 .nav-button {
@@ -46,15 +77,15 @@ nav {
     padding: 10px 20px;
     border-radius: 5px;
     display: block;
-    width: 80%; /* Dostosowanie szerokości przycisków */
+    width: 80%;
     text-align: center;
 }
 
 /* Sekcje główne */
 main {
-    margin-left: 220px; /* Ustaw margines po lewej stronie, aby nie zachodzić na pasek boczny */
+    margin-left: 220px;
     padding: 20px;
-    width: calc(100% - 220px); /* Szerokość main bez paska bocznego */
+    width: calc(100% - 220px);
     box-sizing: border-box;
     background: linear-gradient(to right, #ff0000, #000000 50%, #000000 100%);
     background-size: 200% 200%;
@@ -92,10 +123,10 @@ li {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to top, #000, #ff0000); /* Gradient z czerwonego do czarnego */
+    background: linear-gradient(to top, #000, #ff0000);
     box-shadow: 0 -4px 6px rgba(255, 0, 0, 0.6);
-    width: calc(100% - 220px); /* Szerokość footer bez paska bocznego */
-    margin-left: 220px; /* Ustaw margines po lewej stronie, aby dopasować do main */
+    width: calc(100% - 220px);
+    margin-left: 220px;
     box-sizing: border-box;
 }
 
