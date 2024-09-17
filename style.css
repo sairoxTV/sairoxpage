@@ -1,4 +1,3 @@
-
 /* Ogólne ustawienia */
 body {
     font-family: Arial, sans-serif;
@@ -7,25 +6,10 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
     background: linear-gradient(to right, #ff0000, #000000 50%, #000000 100%);
-    background-size: 200% 200%; /* Zwiększa rozmiar tła gradientu dla płynniejszej animacji */
+    background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
-}
-
-/* Animacja gradientu */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
 }
 
 /* Nagłówek */
@@ -35,32 +19,45 @@ header {
     background: linear-gradient(to bottom, #000, #ff0000); /* Gradient z czarnego do czerwonego */
     box-shadow: 0 4px 6px rgba(255, 0, 0, 0.6);
     width: 100%;
-    max-width: 1200px; /* Możesz dostosować maksymalną szerokość */
     box-sizing: border-box;
 }
 
 /* Nawigacja */
 nav {
-    margin: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Wysokość nawigacji równa wysokości widoku */
+    width: 200px; /* Szerokość paska bocznego */
+    background-color: #000; /* Kolor tła paska bocznego */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 0 6px rgba(255, 0, 0, 0.6);
+    padding: 20px 0;
 }
 
 .nav-button {
-    margin: 0 10px;
+    margin: 10px 0;
     text-decoration: none;
     color: #fff;
     background-color: #ff0000;
     padding: 10px 20px;
     border-radius: 5px;
+    display: block;
+    width: 80%; /* Dostosowanie szerokości przycisków */
+    text-align: center;
 }
 
 /* Sekcje główne */
 main {
+    margin-left: 220px; /* Ustaw margines po lewej stronie, aby nie zachodzić na pasek boczny */
     padding: 20px;
-    width: 100%;
-    max-width: 1200px; /* Możesz dostosować maksymalną szerokość */
+    width: calc(100% - 220px); /* Szerokość main bez paska bocznego */
     box-sizing: border-box;
     background: linear-gradient(to right, #ff0000, #000000 50%, #000000 100%);
-    background-size: 200% 200%; /* Zwiększa rozmiar tła gradientu dla płynniejszej animacji */
+    background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
 }
 
@@ -97,12 +94,11 @@ footer {
     padding: 20px;
     background: linear-gradient(to top, #000, #ff0000); /* Gradient z czerwonego do czarnego */
     box-shadow: 0 -4px 6px rgba(255, 0, 0, 0.6);
-    width: 100%;
-    max-width: 1200px; /* Możesz dostosować maksymalną szerokość */
+    width: calc(100% - 220px); /* Szerokość footer bez paska bocznego */
+    margin-left: 220px; /* Ustaw margines po lewej stronie, aby dopasować do main */
     box-sizing: border-box;
 }
 
 footer p {
     color: #ccc;
 }
-
