@@ -141,3 +141,15 @@ footer {
 footer p {
     color: #ccc;
 }
+
+.nav-button.discord {
+    background-color: #5865F2; /* Kolor Discorda */
+    color: #fff; /* Biały tekst */
+    box-shadow: 0 5px 0 #4a55d1, 0 10px 15px rgba(0, 0, 0, 0.3); /* Efekt 3D */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button.discord:hover {
+    transform: translateY(-3px); /* Podnosi przycisk podczas najeżdżania */
+    box-shadow: 0 5px 0 #4a55d1, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
+}
