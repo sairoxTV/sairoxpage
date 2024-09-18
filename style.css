@@ -71,7 +71,7 @@ nav.hidden {
 
 /* Zaktualizowane przyciski nawigacyjne z efektem 3D i animacją */
 .nav-button {
-    margin: 10px 0;
+    margin: 10px 10;
     text-decoration: none;
     color: #fff;
     background-color: #ff0000;
