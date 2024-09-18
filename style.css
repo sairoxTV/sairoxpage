@@ -27,6 +27,7 @@ body {
 
 /* Nagłówek */
 header {
+    position: relative;
     text-align: center;
     padding: 20px;
     background: linear-gradient(to bottom, #000, #ff0000);
