@@ -69,6 +69,7 @@ nav.hidden {
     box-shadow: 0 4px 6px rgba(255, 0, 0, 0.6);
 }
 
+/* Zaktualizowane przyciski nawigacyjne z efektem 3D i animacją */
 .nav-button {
     margin: 10px 0;
     text-decoration: none;
@@ -79,6 +80,13 @@ nav.hidden {
     display: block;
     width: 80%;
     text-align: center;
+    box-shadow: 0 5px 0 #cc0000, 0 10px 15px rgba(0, 0, 0, 0.3); /* Efekt 3D */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Płynna animacja */
+}
+
+.nav-button:hover {
+    transform: translateY(-3px); /* Podnosi przycisk podczas najeżdżania */
+    box-shadow: 0 5px 0 #cc0000, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
 }
 
 /* Sekcje główne */
