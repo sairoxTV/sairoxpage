@@ -41,7 +41,7 @@ header {
 .avatar-container {
     position: absolute;
     top: 20px;
-    left: 150px !important; /* Tymczasowe rozwiązanie */
+    left: 250px !important; /* Tymczasowe rozwiązanie */
     z-index: 10;
 }
 
