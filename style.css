@@ -35,6 +35,25 @@ header {
     box-sizing: border-box;
 }
 
+
+/* Kontener dla avatara */
+.avatar-container {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    z-index: 10; /* Upewnij się, że jest nad nawigacją */
+}
+
+/* Stylizacja avatara */
+.avatar {
+    width: 80px;  /* Możesz dostosować rozmiar avatara */
+    height: 80px;
+    border-radius: 50%;  /* Avatar będzie okrągły */
+    border: 3px solid #fff;  /* Biała ramka wokół avatara */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
+}
+
+
 /* Nawigacja */
 nav {
     position: fixed;
@@ -141,26 +160,6 @@ footer {
 footer p {
     color: #ccc;
 }
-
-/* Kontener dla avatara */
-.avatar-container {
-    position: absolute;
-    top: 20px;
-    left: 70px;
-    z-index: 10; /* Upewnij się, że jest nad nawigacją */
-}
-
-/* Stylizacja avatara */
-.avatar {
-    width: 80px;  /* Możesz dostosować rozmiar avatara */
-    height: 80px;
-    border-radius: 50%;  /* Avatar będzie okrągły */
-    border: 3px solid #fff;  /* Biała ramka wokół avatara */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
-}
-
-
-
 
 .nav-button.discord {
     background-color: #5865F2; /* Kolor Discorda */
