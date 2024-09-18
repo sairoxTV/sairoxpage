@@ -153,3 +153,20 @@ footer p {
     transform: translateY(-3px); /* Podnosi przycisk podczas najeżdżania */
     box-shadow: 0 5px 0 #4a55d1, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
 }
+
+/* Kontener dla avatara */
+.avatar-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Upewnij się, że jest nad nawigacją */
+}
+
+/* Stylizacja avatara */
+.avatar {
+    width: 80px;  /* Możesz dostosować rozmiar avatara */
+    height: 80px;
+    border-radius: 50%;  /* Avatar będzie okrągły */
+    border: 3px solid #fff;  /* Biała ramka wokół avatara */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
+}
