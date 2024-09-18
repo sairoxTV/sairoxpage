@@ -41,14 +41,14 @@ header {
 .avatar-container {
     position: absolute;
     top: 20px;
-    left: 70px;
+    left: 150px;
     z-index: 10; /* Upewnij się, że jest nad nawigacją */
 }
 
 /* Stylizacja avatara */
 .avatar {
-    width: 80px;  /* Możesz dostosować rozmiar avatara */
-    height: 80px;
+    width: 100px;  /* Możesz dostosować rozmiar avatara */
+    height: 100px;
     border-radius: 50%;  /* Avatar będzie okrągły */
     border: 3px solid #fff;  /* Biała ramka wokół avatara */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
