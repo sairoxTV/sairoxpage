@@ -41,8 +41,8 @@ header {
 .avatar-container {
     position: absolute;
     top: 20px;
-    left: 400px;
-    z-index: 10; /* Upewnij się, że jest nad nawigacją */
+    left: 150px !important; /* Tymczasowe rozwiązanie */
+    z-index: 10;
 }
 
 /* Stylizacja avatara */
