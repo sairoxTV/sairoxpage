@@ -15,7 +15,7 @@ header {
     position: relative;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to bottom, #ff0000, #000);
+    background: linear-gradient(to bottom, #0000ff, #000); /* Zmienione na niebieski */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 100%;
     box-sizing: border-box;
@@ -63,7 +63,7 @@ nav.hidden {
     position: absolute;
     top: 10px;
     right: -40px; /* Pozycja przycisku poza paskiem bocznym */
-    background-color: #ff0000;
+    background-color: #0000ff; /* Niebieski */
     color: #fff;
     border: none;
     padding: 10px;
@@ -77,19 +77,19 @@ nav.hidden {
     margin: 10px 10px;
     text-decoration: none;
     color: #fff;
-    background-color: #ff0000; /* Czerwony kolor przycisku */
+    background-color: #0000ff; /* Niebieski kolor przycisku */
     padding: 10px 20px;
     border-radius: 5px;
     display: block;
     width: 70%;
     text-align: center;
-    box-shadow: 0 5px 0 #cc0000, 0 10px 15px rgba(0, 0, 0, 0.3); /* Efekt 3D */
+    box-shadow: 0 5px 0 #0000cc, 0 10px 15px rgba(0, 0, 0, 0.3); /* Efekt 3D */
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* Płynna animacja */
 }
 
 .nav-button:hover {
     transform: translateY(-3px); /* Podnosi przycisk podczas najeżdżania */
-    box-shadow: 0 5px 0 #cc0000, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
+    box-shadow: 0 5px 0 #0000cc, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
 }
 
 /* Sekcje główne */
@@ -106,13 +106,13 @@ section {
     padding: 20px;
     background-color: #f9f9f9; /* Jasnoszare tło sekcji */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #ff0000; /* Czerwony akcent */
+    border-left: 5px solid #0000ff; /* Niebieski akcent */
 }
 
 /* Nagłówki sekcji */
 h2 {
     font-size: 1.8rem;
-    color: #ff0000; /* Czerwony nagłówek */
+    color: #0000ff; /* Niebieski nagłówek */
     border-bottom: 2px solid #000; /* Czarne podkreślenie */
     padding-bottom: 5px;
 }
@@ -131,7 +131,7 @@ li {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to top, #000, #ff0000);
+    background: linear-gradient(to top, #000, #0000ff); /* Niebieski gradient */
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
     width: calc(100% - 220px);
     margin-left: 220px;
