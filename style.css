@@ -174,3 +174,8 @@ footer p {
     transform: translateY(-3px); /* Podnosi przycisk podczas najeżdżania */
     box-shadow: 0 5px 0 #4a55d1, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
 }
+
+
+.hidden {
+    display: none; /* Ukrywa element */
+}
