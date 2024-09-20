@@ -111,10 +111,12 @@ section {
 
 /* Nagłówki sekcji */
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Zwiększenie rozmiaru czcionki */
     color: #0000ff; /* Niebieski nagłówek */
     border-bottom: 2px solid #000; /* Czarne podkreślenie */
     padding-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Cień tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
 }
 
 /* Lista umiejętności */
