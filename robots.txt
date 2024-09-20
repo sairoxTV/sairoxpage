@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /private/
+Sitemap: https://sairoxtv.github.io/sairoxpage//sitemap.xml
