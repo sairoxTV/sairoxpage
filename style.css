@@ -59,11 +59,11 @@ nav.hidden {
     transform: translateX(-100%); /* Chowanie paska bocznego */
 }
 
+/* Przycisk do wysuwania panelu */
 #toggle-button {
-    position: absolute;
-    top: 10px;
-    left: 50%; /* Wyśrodkowanie przycisku */
-    transform: translateX(-50%); /* Przesunięcie w lewo o połowę szerokości przycisku */
+    position: fixed; /* Ustawienie jako fixed */
+    top: 20px; /* Odległość od górnej krawędzi */
+    left: 10px; /* Odległość od lewej krawędzi */
     background-color: #0000ff; /* Niebieski */
     color: #fff;
     border: none;
@@ -71,6 +71,7 @@ nav.hidden {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Zapewnia, że przycisk jest na wierzchu */
 }
 
 /* Zaktualizowane przyciski nawigacyjne z efektem 3D i animacją */
@@ -120,6 +121,13 @@ h2 {
     font-weight: bold; /* Pogrubienie tekstu */
 }
 
+/* Nagłówki w górnej części strony */
+h1, h2 {
+    color: #fff; /* Biały kolor tekstu */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Cień tekstu dla lepszej widoczności */
+    font-weight: bold; /* Pogrubienie tekstu */
+}
+
 /* Lista umiejętności */
 ul {
     list-style-type: square;
@@ -143,8 +151,9 @@ footer {
 
 footer p {
     color: #fff; /* Biały tekst */
-    font-size: 1.2rem; /* Zwiększenie rozmiaru czcionki */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Cień tekstu */
+    font-size: 1.5rem; /* Zwiększenie rozmiaru czcionki */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Cień tekstu dla lepszej widoczności */
+    font-weight: bold; /* Pogrubienie tekstu */
 }
 
 .nav-button.discord {
