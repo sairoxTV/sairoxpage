@@ -38,26 +38,26 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
 }
 
-/* Nawigacja */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 200px;
-    background-color: #fff; /* Białe tło panelu */
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3);
     padding: 20px 0;
-    transition: transform 0.3s ease; /* Animacja dla chowania */
+    transition: transform 0.3s ease; /* Animacja dla przejścia */
 }
 
 nav.hidden {
-    transform: translateX(-100%); /* Chowanie paska bocznego */
+    transform: translateX(-100%); /* Przesunięcie, aby ukryć panel */
 }
+
 
 
 #toggle-button {
