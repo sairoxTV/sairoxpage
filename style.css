@@ -72,11 +72,11 @@ nav.hidden {
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     z-index: 1000; /* Zapewnia, że przycisk jest na wierzchu */
-    font-size: 1rem; /* Rozmiar czcionki */
+    font-size: 3rem; /* Rozmiar czcionki */
     font-weight: bold; /* Pogrubienie tekstu */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Cień tekstu */
-    width: 100px; /* Stała szerokość */
-    height: 40px; /* Stała wysokość */
+    width: 160px; /* Stała szerokość */
+    height: 80px; /* Stała wysokość */
 }
 
 
