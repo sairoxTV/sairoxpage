@@ -59,7 +59,6 @@ nav.hidden {
     transform: translateX(-100%); /* Chowanie paska bocznego */
 }
 
-/* Przycisk do wysuwania panelu */
 #toggle-button {
     position: fixed; /* Ustawienie jako fixed */
     top: 20px; /* Odległość od górnej krawędzi */
@@ -67,12 +66,14 @@ nav.hidden {
     background-color: #0000ff; /* Niebieski */
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 8px 12px; /* Zmniejszone wymiary */
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Mniejszy cień */
     z-index: 1000; /* Zapewnia, że przycisk jest na wierzchu */
+    font-size: 14px; /* Zmniejszona czcionka */
 }
+
 
 /* Zaktualizowane przyciski nawigacyjne z efektem 3D i animacją */
 .nav-button {
