@@ -62,7 +62,8 @@ nav.hidden {
 #toggle-button {
     position: absolute;
     top: 10px;
-    right: -40px; /* Pozycja przycisku poza paskiem bocznym */
+    left: 50%; /* Wyśrodkowanie przycisku */
+    transform: translateX(-50%); /* Przesunięcie w lewo o połowę szerokości przycisku */
     background-color: #0000ff; /* Niebieski */
     color: #fff;
     border: none;
