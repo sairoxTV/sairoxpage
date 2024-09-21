@@ -1,3 +1,4 @@
+
 /* Ogólne ustawienia */
 body {
     font-family: Arial, sans-serif;
@@ -38,13 +39,14 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
 }
 
+/* Nawigacja */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 200px;
-    background-color: #FFF;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,8 +60,7 @@ nav.hidden {
     transform: translateX(-100%); /* Przesunięcie, aby ukryć panel */
 }
 
-
-
+/* Przycisk do otwierania panelu */
 #toggle-button {
     position: fixed; /* Ustawienie jako fixed */
     top: 20px; /* Odległość od górnej krawędzi */
@@ -78,7 +79,6 @@ nav.hidden {
     width: 160px; /* Stała szerokość */
     height: 80px; /* Stała wysokość */
 }
-
 
 /* Zaktualizowane przyciski nawigacyjne z efektem 3D i animacją */
 .nav-button {
@@ -100,7 +100,7 @@ nav.hidden {
     box-shadow: 0 5px 0 #0000cc, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
 }
 
-/* Sekcje główne */
+/* Główne sekcje */
 main {
     margin-left: 220px;
     padding: 20px;
@@ -162,6 +162,7 @@ footer p {
     font-weight: bold; /* Pogrubienie tekstu */
 }
 
+/* Discord button */
 .nav-button.discord {
     background-color: #5865F2; /* Kolor Discorda */
     color: #fff; /* Biały tekst */
@@ -174,7 +175,7 @@ footer p {
     box-shadow: 0 5px 0 #4a55d1, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
 }
 
-
+/* Ukrywanie elementów */
 .hidden {
     display: none; /* Ukrywa element */
 }
