@@ -1,14 +1,13 @@
-
 /* Ogólne ustawienia */
 body {
     font-family: Arial, sans-serif;
-    color: #000; /* Czarny kolor tekstu */
+    color: #000;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #fff; /* Białe tło */
+    background-color: #fff;
 }
 
 /* Nagłówek */
@@ -16,7 +15,7 @@ header {
     position: relative;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to bottom, #0000ff, #000); /* Zmienione na niebieski */
+    background: linear-gradient(to bottom, #0000ff, #000);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 100%;
     box-sizing: border-box;
@@ -26,75 +25,84 @@ header {
 .avatar-container {
     position: absolute;
     top: 20px;
-    left: 250px !important; /* Tymczasowe rozwiązanie */
+    left: 250px !important;
     z-index: 10;
 }
 
-/* Stylizacja avatara */
 .avatar {
-    width: 120px;  /* Możesz dostosować rozmiar avatara */
+    width: 120px;
     height: 120px;
-    border-radius: 50%;  /* Avatar będzie okrągły */
-    border: 3px solid #000;  /* Czarne ramka wokół avatara */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
+    border-radius: 50%;
+    border: 3px solid #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Stylizacja panelu z białym tłem i animacją */
+/* Panel boczny */
 #sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px; /* szerokość panelu */
-  height: 100vh; /* wysokość pełnego ekranu */
-  background-color: white; /* białe tło */
-  transform: translateX(-100%); /* panel zaczyna poza ekranem (ukryty) */
-  transition: transform 0.5s ease; /* płynne wysuwanie */
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 1000;
 }
 
-/* Panel aktywny (animacja wysuwania z lewej strony) */
 #sidebar.active {
-  transform: translateX(0); /* Panel jest widoczny */
+    transform: translateX(0);
 }
 
-/* Przycisk do otwierania panelu */
+/* Przycisk menu */
 #toggle-button {
-    position: fixed; /* Ustawienie jako fixed */
-    top: 20px; /* Odległość od górnej krawędzi */
-    left: 10px; /* Odległość od lewej krawędzi */
-    background-color: #0000ff; /* Niebieski */
-    color: #fff; /* Biały tekst */
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    background-color: #0000ff;
+    color: #fff;
     border: none;
-    padding: 10px; /* Padding */
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Zapewnia, że przycisk jest na wierzchu */
-    font-size: 3rem; /* Rozmiar czcionki */
-    font-weight: bold; /* Pogrubienie tekstu */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Cień tekstu */
-    width: 160px; /* Stała szerokość */
-    height: 80px; /* Stała wysokość */
+    z-index: 1000;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    width: 160px;
+    height: 80px;
 }
 
-/* Zaktualizowane przyciski nawigacyjne z efektem 3D i animacją */
+/* Stylizacja przycisków nawigacyjnych */
 .nav-button {
     margin: 10px 10px;
     text-decoration: none;
     color: #fff;
-    background-color: #0000ff; /* Niebieski kolor przycisku */
+    background-color: #0000ff;
     padding: 10px 20px;
     border-radius: 5px;
     display: block;
     width: 70%;
     text-align: center;
-    box-shadow: 0 5px 0 #0000cc, 0 10px 15px rgba(0, 0, 0, 0.3); /* Efekt 3D */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Płynna animacja */
+    box-shadow: 0 5px 0 #0000cc, 0 10px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-button:hover {
-    transform: translateY(-3px); /* Podnosi przycisk podczas najeżdżania */
-    box-shadow: 0 5px 0 #0000cc, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 0 #0000cc, 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Discord button */
+.nav-button.discord {
+    background-color: #5865F2;
+    box-shadow: 0 5px 0 #4a55d1, 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button.discord:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 0 #4a55d1, 0 15px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Główne sekcje */
@@ -102,50 +110,30 @@ main {
     margin-left: 220px;
     padding: 20px;
     width: calc(100% - 220px);
-    background-color: #fff; /* Białe tło sekcji */
+    background-color: #fff;
 }
 
-/* Sekcje */
 section {
     margin: 20px 0;
     padding: 20px;
-    background-color: #f9f9f9; /* Jasnoszare tło sekcji */
+    background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #0000ff; /* Niebieski akcent */
+    border-left: 5px solid #0000ff;
 }
 
-/* Nagłówki sekcji */
 h2 {
-    font-size: 2rem; /* Zwiększenie rozmiaru czcionki */
-    color: #0000ff; /* Niebieski nagłówek */
-    border-bottom: 2px solid #000; /* Czarne podkreślenie */
+    font-size: 2rem;
+    color: #0000ff;
+    border-bottom: 2px solid #000;
     padding-bottom: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Cień tekstu */
-    font-weight: bold; /* Pogrubienie tekstu */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }
 
-/* Nagłówki w górnej części strony */
-h1, h2 {
-    color: #fff; /* Biały kolor tekstu */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Cień tekstu dla lepszej widoczności */
-    font-weight: bold; /* Pogrubienie tekstu */
-}
-
-/* Lista umiejętności */
-ul {
-    list-style-type: square;
-    color: #000; /* Czarny tekst */
-}
-
-li {
-    margin: 10px 0;
-}
-
-/* Stopka */
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(to top, #000, #0000ff); /* Niebieski gradient */
+    background: linear-gradient(to top, #000, #0000ff);
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
     width: calc(100% - 220px);
     margin-left: 220px;
@@ -153,26 +141,13 @@ footer {
 }
 
 footer p {
-    color: #fff; /* Biały tekst */
-    font-size: 1.5rem; /* Zwiększenie rozmiaru czcionki */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Cień tekstu dla lepszej widoczności */
-    font-weight: bold; /* Pogrubienie tekstu */
-}
-
-/* Discord button */
-.nav-button.discord {
-    background-color: #5865F2; /* Kolor Discorda */
-    color: #fff; /* Biały tekst */
-    box-shadow: 0 5px 0 #4a55d1, 0 10px 15px rgba(0, 0, 0, 0.3); /* Efekt 3D */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.nav-button.discord:hover {
-    transform: translateY(-3px); /* Podnosi przycisk podczas najeżdżania */
-    box-shadow: 0 5px 0 #4a55d1, 0 15px 20px rgba(0, 0, 0, 0.4); /* Mocniejszy cień podczas najeżdżania */
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
 }
 
 /* Ukrywanie elementów */
 .hidden {
-    display: none; /* Ukrywa element */
+    display: none;
 }
