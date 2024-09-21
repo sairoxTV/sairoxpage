@@ -37,22 +37,25 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Panel boczny */
 nav {
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 200px;
     height: 100vh;
     background-color: white;
-    transform: translateX(-100%);
     transition: transform 0.5s ease;
-    z-index: 1000;
+    transform: translateX(-100%); /* Domyślnie ukryty */
 }
 
-nav.hidden {
-    transform: translateX(0);
+nav.active {
+    transform: translateX(0); /* Wysunięcie panelu */
 }
+
+.hidden {
+    display: none; /* Możesz zostawić to, jeśli chcesz, aby element nie zajmował miejsca */
+}
+
 
 /* Przycisk menu */
 #toggle-button {
@@ -145,9 +148,4 @@ footer p {
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-weight: bold;
-}
-
-/* Ukrywanie elementów */
-.hidden {
-    display: none;
 }
