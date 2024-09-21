@@ -38,7 +38,7 @@ header {
 }
 
 /* Panel boczny */
-#sidebar {
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -50,7 +50,7 @@ header {
     z-index: 1000;
 }
 
-#sidebar.active {
+nav.hidden {
     transform: translateX(0);
 }
 
