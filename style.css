@@ -39,25 +39,22 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
 }
 
-/* Nawigacja */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 200px;
-    background-color: #FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.3);
-    padding: 20px 0;
-    transition: transform 0.3s ease; /* Animacja dla przejścia */
+/* Stylizacja panelu z białym tłem i animacją */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px; /* szerokość panelu */
+  height: 100vh; /* wysokość pełnego ekranu */
+  background-color: white; /* białe tło */
+  transform: translateX(-100%); /* panel zaczyna poza ekranem (ukryty) */
+  transition: transform 0.5s ease; /* płynne wysuwanie */
+  z-index: 1000;
 }
 
-nav.hidden {
-    transform: translateX(-100%); /* Przesunięcie, aby ukryć panel */
+/* Panel aktywny (animacja wysuwania z lewej strony) */
+#sidebar.active {
+  transform: translateX(0); /* Panel jest widoczny */
 }
 
 /* Przycisk do otwierania panelu */
