@@ -1,4 +1,3 @@
-
 /* Ogólne ustawienia */
 body {
     font-family: Arial, sans-serif;
@@ -6,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row; /* Zmiana na row, aby panel był obok main */
+    flex-direction: column; /* Zmiana na kolumnę, aby stopka była na dole */
     min-height: 100vh;
     background-color: #fff; /* Białe tło */
 }
@@ -26,17 +25,17 @@ header {
 .avatar-container {
     position: absolute;
     top: 20px;
-    left: 250px !important; /* Tymczasowe rozwiązanie */
+    left: 250px; /* Wartość tymczasowa - dostosuj według potrzeby */
     z-index: 10;
 }
 
 /* Stylizacja avatara */
 .avatar {
-    width: 120px;  /* Możesz dostosować rozmiar avatara */
+    width: 120px; /* Możesz dostosować rozmiar avatara */
     height: 120px;
-    border-radius: 50%;  /* Avatar będzie okrągły */
-    border: 3px solid #000;  /* Czarne ramka wokół avatara */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  /* Cień wokół avatara */
+    border-radius: 50%; /* Avatar będzie okrągły */
+    border: 3px solid #000; /* Czarne ramka wokół avatara */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Cień wokół avatara */
 }
 
 /* Nawigacja */
@@ -60,6 +59,7 @@ main {
     margin-left: 220px; /* Margines z lewej strony dla panelu */
     padding: 20px;
     width: calc(100% - 220px);
+    flex-grow: 1; /* Pozwala głównej sekcji rosnąć, aby zająć miejsce */
     background-color: #fff; /* Białe tło sekcji */
 }
 
@@ -132,9 +132,7 @@ footer p {
     font-size: 1.5rem; /* Zwiększenie rozmiaru czcionki */
 }
 
-/* Discord button */
+/* Przyciski Discord */
 .nav-button.discord {
     background-color: #5865F2; /* Kolor Discorda */
 }
-
-/* Ukrywanie elementów - usunięte, bo niepotrzebne */
